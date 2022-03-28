@@ -1,17 +1,18 @@
-import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import { Layout } from 'antd';
 
-export default function Layout() {
+const { Header, Content, Sider, Footer } = Layout;
+
+export default function LayoutWrap() {
   return (
-    <div>Layout
-
-      <div>
-        <Link to='/home'>点击去首页</Link>
-      </div>
-      <div>
-        <Link to='/list'>查看详情</Link>
-      </div>
-      <Outlet />
+    <div>
+      <Header>header</Header>
+      <Sider>sider</Sider>
+      <Content>
+        content
+        <Outlet />
+      </Content>
+      <Footer >footer</Footer >
     </div>
   )
 }

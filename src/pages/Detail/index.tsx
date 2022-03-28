@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 import { getInvoice } from '../List/constants';
 
 export default function Detail() {
