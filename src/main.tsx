@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
-import { onRouteBefore, routes, setRouteBefore, transforRoutes } from './router';
+import { onRouteBefore, routes, setRouteBefore, transforRoutes } from '@/router';
 import './index.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename='/web_space/'>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
