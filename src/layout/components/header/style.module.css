@@ -5,19 +5,41 @@
   background-color: #000000d9;
   display: flex;
   box-sizing: border-box;
+  color: #fff;
 }
 
 .logo {
   width: 150px;
   height: 100%;
   line-height: 64px;
-  color: #fff;
   font-size: 36px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .nav {
   flex: auto;
+}
+
+.nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li {
+  cursor: pointer;
+  height: 100%;
+  padding: 0 20px;
+  line-height: 64px;
+}
+
+.nav ul li:hover {
+  background-color: #1677FF;
+}
+
+.nav span {
+  font-size: 16px;
 }
 
 /* .other {

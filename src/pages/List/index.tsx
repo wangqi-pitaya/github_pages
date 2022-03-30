@@ -31,7 +31,7 @@ export default function List() {
           return (
             <div key={invoice.number}>
               <QueryNavLink
-                to={`/list/${invoice.number}`}
+                to={`/detail/${invoice.number}`}
                 style={({ isActive }: any) => {
                   return {
                     display: "block",
