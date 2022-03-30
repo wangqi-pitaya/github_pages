@@ -20,7 +20,7 @@ export function paramsStringify(params?: {[key: string] : any}) {
  * @returns 拼接后的url
  */
 export function urlWithParams(url: string, params?: {[key: string] : any}) {
-  if (!params || params === {}) return url;
+  if (!params || Object.prototype.toString.call(params) === 'Object object') return url;
   const paramsString = paramsStringify(params);
   if (!paramsString) {
     return url;
