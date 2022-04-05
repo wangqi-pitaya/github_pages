@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, useRoutes } from 'react-router-dom';
-import { onRouteBefore, routes, setRouteBefore, transforRoutes } from '@/router';
-import './index.css'
+import {BrowserRouter, useRoutes} from 'react-router-dom';
+import {onRouteBefore, routes, setRouteBefore, transforRoutes} from '@/router';
+import 'antd/dist/antd.css';
+import './index.css';
 
 function App() {
   setRouteBefore(onRouteBefore);
@@ -16,5 +17,5 @@ ReactDOM.render(
       <App />
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById('root'),
+);

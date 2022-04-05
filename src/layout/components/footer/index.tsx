@@ -1,7 +1,8 @@
-import styles from './style.module.css';
+import {Layout} from 'antd';
 
+const {Footer: AntdFooter} = Layout;
 export default function Footer() {
   return (
-    <footer className={styles.footer}>footer</footer>
-  )
+    <AntdFooter>footer</AntdFooter>
+  );
 }

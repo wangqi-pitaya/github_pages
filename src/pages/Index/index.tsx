@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 export default function Index() {
+  console.log('123');
   return (
     <div>
       <div
         style={{
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          height: '100%',
           backgroundColor: '#000',
           color: '#fff',
           display: 'flex',
@@ -21,5 +22,5 @@ export default function Index() {
         <button><Link to='/entry'>进入小站</Link></button>
       </div>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { Navigate } from "react-router-dom";
+import React, {Suspense} from 'react';
+import {Navigate} from 'react-router-dom';
 import Guard from './guard';
 
 let handleRouteBefore: any = null;
@@ -16,29 +16,29 @@ function lazyLoad(importFn: any, meta: any) {
     <Suspense fallback={<div>loading</div>}>
       <Element _meta={meta} />
     </Suspense>
-  )
+  );
   return (
     <Guard
       element={lazyElement}
       meta={meta}
       handleRouteBefore={handleRouteBefore}
     />
-  )
+  );
 }
 
 /**
  * transformRoutes 方法对原始路由配置进行了递归遍历处理，转换成react-router需要的路由配置数据格式
- * @param routes 
- * @returns 
+ * @param routes
+ * @returns
  */
 export function transforRoutes(routes: any) {
   const list: any = [];
   routes.forEach((route: any) => {
-    const obj = { ...route };
+    const obj = {...route};
     if (obj.redirect) {
-      obj.element = <Navigate to={obj.redirect} replace />
+      obj.element = <Navigate to={obj.redirect} replace />;
     }
-    if (obj.component)  {
+    if (obj.component) {
       obj.element = lazyLoad(obj.component, obj.meta);
     }
     delete obj.redirect;

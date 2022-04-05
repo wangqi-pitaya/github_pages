@@ -1,5 +1,5 @@
-import QueryNavLink from "./QueryNavLink";
+import QueryNavLink from './QueryNavLink';
 
 export {
   QueryNavLink,
-}
+};
