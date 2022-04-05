@@ -31,12 +31,16 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "path": "^0.12.7",
-    "pre-commit": "^1.2.2",
     "typescript": "^4.5.4",
     "vite": "^2.8.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
   "lint-staged": {
-    "src/**/*.{ts, tsx, js, css}": [
+    "src/**/*.{ts, tsx, js, jsx}": [
       "npm run lint",
       "git add"
     ]
