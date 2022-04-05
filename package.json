@@ -35,6 +35,11 @@
     "typescript": "^4.5.4",
     "vite": "^2.8.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "**/*.{ts, tsx, js, jsx}": "eslint src --ext .ts,.tsx,.js,.jsx"
   }
