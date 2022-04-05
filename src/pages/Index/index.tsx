@@ -2,7 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 export default function Index() {
-    console.log('123');
+    console.log('1234');
+
   return (
     <div>
       <div
