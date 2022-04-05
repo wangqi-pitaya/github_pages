@@ -36,6 +36,6 @@
     "vite": "^2.8.0"
   },
   "lint-staged": {
-    "**/*.{ts, tsx, js, jsx}": "npm run lint"
+    "**/*.{ts, tsx, js, jsx}": "eslint src --ext .ts,.tsx,.js,.jsx"
   }
 }
