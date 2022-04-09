@@ -1,8 +1,7 @@
-import {Layout} from 'antd';
+import { Layout } from 'antd';
 
-const {Footer: AntdFooter} = Layout;
+const { Footer: AntdFooter } = Layout;
+
 export default function Footer() {
-  return (
-    <AntdFooter>footer</AntdFooter>
-  );
+	return <AntdFooter>footer</AntdFooter>;
 }
