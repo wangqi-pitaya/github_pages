@@ -39,13 +39,12 @@ module.exports = {
 	// 自定义eslint规则覆盖或者关闭原有相关配置
 	// https://eslint.bootcss.com/docs/user-guide/configuring#configuring-rules
 	rules: {
-		"prettier/prettier": "error",
-		"react/react-in-jsx-scope": "off",
-		"@typescript-eslint/no-explicit-any": "off",
-		"@typescript-eslint/no-unused-vars": "error"
+		'prettier/prettier': 'error',
+		'react/react-in-jsx-scope': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/no-unused-vars': 'error',
 	},
 	// 添加该环境下的自定义的全局变量的变量名以防止eslint 报错
 	// https://eslint.bootcss.com/docs/user-guide/configuring#specifying-globals
-	globals: {
-	},
+	globals: {},
 };
