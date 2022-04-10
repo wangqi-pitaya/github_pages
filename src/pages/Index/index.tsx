@@ -12,8 +12,7 @@ export default function Index() {
 				flexDirection: 'column',
 			}}
 		>
-			<h2>王琦的小世界</h2>
-			<p>欢迎来到我的小世界，记录、分享一些有趣的东西，跟随我一起进入我的小世界去看看吧！</p>
+			<h2 style={{ color: '#fff' }}>Vite + React + React-Router v6</h2>
 		</div>
 	);
 }
