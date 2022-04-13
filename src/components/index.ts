@@ -1,5 +1,3 @@
-import QueryNavLink from './QueryNavLink';
+import Button from './Button';
 
-export {
-  QueryNavLink,
-};
+export { Button };
