@@ -31,9 +31,6 @@ function lazyLoad(importFn: any, meta: any) {
 
 /**
  * transformRoutes 方法对原始路由配置进行了递归遍历处理，转换成react-router需要的路由配置数据格式
- *
- * @param routes
- * @returns
  */
 export function transforRoutes(routes: any) {
 	const list: any = [];

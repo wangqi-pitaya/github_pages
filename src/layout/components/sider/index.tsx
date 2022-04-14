@@ -1,20 +1,14 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import { routes } from '@/router';
-import styles from './style.module.css';
+import './index.scss';
 
 const { Sider: AntdSider } = Layout;
 
-/**
- *
- */
 export default function Sider() {
 	const { pathname } = useLocation();
 	const navigate = useNavigate();
 
-	/**
-	 *
-	 */
 	const onGetSiderArr = () => {
 		let asideArr: any[] = [];
 		routes.forEach((item) => {
@@ -28,7 +22,7 @@ export default function Sider() {
 	if (onGetSiderArr().length === 0) return null;
 
 	return (
-		<AntdSider className={styles.aside} theme="light">
+		<AntdSider className="aside" theme="light">
 			<Menu defaultSelectedKeys={['0']}>
 				{onGetSiderArr().map((aside) =>
 					aside.title ? (

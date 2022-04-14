@@ -4,9 +4,6 @@ import { BrowserRouter, useRoutes } from 'react-router-dom';
 import { onRouteBefore, routes, setRouteBefore, transforRoutes } from '@/router';
 import 'antd/dist/antd.css';
 
-/**
- *
- */
 function App() {
 	setRouteBefore(onRouteBefore);
 	const element = useRoutes(transforRoutes(routes));

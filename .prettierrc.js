@@ -1,6 +1,6 @@
 // https://prettier.io/docs/en/index.html
 module.exports = {
-	printWidth: 120, // 一行的最大字符数
+	printWidth: 80, // 一行的最大字符数
 	semi: true, // 是否使用分号
 	singleQuote: true, // 是否使用单引号
 	trailingComma: 'all', // 末尾逗号在可能的地方都加上逗号

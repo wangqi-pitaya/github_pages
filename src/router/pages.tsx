@@ -15,20 +15,27 @@ const pages: IRoute[] = [
 			},
 			{
 				path: '/home',
+				meta: {
+					title: '首页',
+				},
+				component: () => import('../pages/Index'),
+			},
+			{
+				path: '/doc',
+				meta: {
+					title: '文档',
+				},
 				children: [
 					{
-						path: '/home',
-						redirect: '/home/index',
+						path: '/doc',
+						redirect: '/doc/index',
 					},
 					{
-						path: '/home/index',
+						path: '/doc/index',
 						meta: {
-							title: '首页',
+							title: '文档一',
 						},
-						/**
-						 *
-						 */
-						component: () => import('../pages/Index'),
+						component: () => import('../pages/Doc'),
 					},
 				],
 			},
@@ -36,9 +43,6 @@ const pages: IRoute[] = [
 	},
 	{
 		path: '*',
-		/**
-		 *
-		 */
 		component: () => import('../pages/404'),
 	},
 ];

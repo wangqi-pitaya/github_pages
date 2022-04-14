@@ -2,13 +2,6 @@ import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 let temp: any = null;
 
-/**
- *
- * @param root0
- * @param root0.element
- * @param root0.meta
- * @param root0.handleRouteBefore
- */
 export default function ({ element, meta, handleRouteBefore }: any) {
 	meta = meta || {};
 	const location = useLocation();

@@ -1,19 +1,16 @@
 import { Outlet } from 'react-router-dom';
 import { Layout } from 'antd';
 import { Header, Footer, Sider } from './components';
-import styles from './style.module.css';
+import './index.scss';
 
-/**
- *
- */
 export default function LayoutWrap() {
 	return (
-		<Layout className={styles.wrap}>
+		<Layout className="wrap">
 			<Header />
 			<Layout>
 				<Sider />
 				<Layout>
-					<div className={styles.articles}>
+					<div className="articles">
 						<Outlet />
 					</div>
 					<Footer></Footer>
