@@ -7,8 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prettier": "prettier --write **/*.{js,jsx,tsx,ts,css,scss,md,json}",
-    "eslint": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
-    "prepare": "husky install"
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx --fix"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -25,6 +24,7 @@
     ]
   },
   "dependencies": {
+    "ahooks": "^3.3.0",
     "antd": "^4.19.3",
     "classnames": "^2.3.1",
     "react": "^17.0.2",

@@ -22,7 +22,4 @@ export const routes: IRoute[] = pages;
  * @param root0.meta
  */
 export function onRouteBefore({ meta }: IRoute) {
-	if (meta?.title) {
-		document.title = meta.title;
-	}
 }

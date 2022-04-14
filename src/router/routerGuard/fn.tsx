@@ -22,7 +22,7 @@ function lazyLoad(importFn: any, meta: any) {
 	const Element = React.lazy(importFn);
 	const lazyElement = (
 		// fallback值就是路由切换时的loading组件
-		<Suspense fallback={<div>loading</div>}>
+		<Suspense fallback={<div></div>}>
 			<Element _meta={meta} />
 		</Suspense>
 	);

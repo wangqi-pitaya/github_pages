@@ -1,4 +1,5 @@
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { useTitle } from 'ahooks';
 
 let temp: any = null;
 
@@ -7,6 +8,7 @@ export default function ({ element, meta, handleRouteBefore }: any) {
 	const location = useLocation();
 	const { pathname }: any = location;
 	const navigate: any = useNavigate();
+	useTitle(meta?.title);
 
 	if (handleRouteBefore) {
 		if (temp === element) return element;
