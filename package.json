@@ -7,7 +7,11 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prettier": "prettier --write **/*.{js,jsx,tsx,ts,css,scss,md,json}",
+    "eslint": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
     "prepare": "husky install"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -15,6 +19,9 @@
     ],
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
+    ],
+    "*.{ts,tsx,js,jsx}": [
+      "eslint src --ext .ts,.tsx,.js,.jsx --fix"
     ]
   },
   "dependencies": {
@@ -31,10 +38,12 @@
     "@types/react-dom": "^17.0.10",
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^1.0.7",
-    "husky": "^7.0.4",
+    "eslint": "^8.13.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
     "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "vite": "^2.8.0",
+    "yorkie": "^2.0.0"
   }
 }
